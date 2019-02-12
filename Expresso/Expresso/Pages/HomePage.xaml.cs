@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace Expresso
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Expresso.Pages
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class HomePage : TabbedPage
     {
-        public MainPage()
+        public HomePage ()
         {
             InitializeComponent();
         }
